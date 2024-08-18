@@ -1,0 +1,32 @@
+html, body {
+    background-color: #616161;
+}
+.ask-btn {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    z-index: 10;
+
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 1.5em; /* размер кнопки */
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+
+.visual-point {
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+}

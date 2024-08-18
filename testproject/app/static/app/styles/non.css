@@ -1,0 +1,91 @@
+html, body {
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* фиксирует фон при прокрутке страницы */
+}
+
+.ask-btn {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    z-index: 10;
+
+
+--border-right: 6px;
+   --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 1.5em; /* размер кнопки */
+    letter-spacing: 10px;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.ask-btn-hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.ask-btn:hover {
+    cursor: pointer;
+}
+
+
+.ask-btn:hover .ask-btn-hover-text {
+    width: 100%;
+
+    filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+.visual-point {
+    width: 5px;
+    height: 5px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.btn1 {
+    padding-top: 10px;
+
+    width: 10%; /* или любое другое значение ширины, которое вам нужно */
+    margin: 0 auto;
+}
+.chatwin {
+height: 500px;
+width: 500px;
+display: block;
+background-color: #000000;
+margin: 0 auto;
+opacity: 0.8; /* Задать цвет блока с прозрачностью 50% */
+border-radius: 3%;
+margin-top: 140px;
+overflow-y: auto; /* Добавим вертикальную прокрутку для сообщений */
+}
+.chat {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+
+opacity: 1; /* Задать цвет блока с прозрачностью 50% */
+    box-sizing: border-box;
+    margin-top: 600px;
+}
+
